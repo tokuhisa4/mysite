@@ -1,0 +1,27 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 暖色グラデのベース（背景） */
+:root {
+  --bg-from: #b72d38; /* CC3341 より暗め */
+  --bg-via:  #4b2e83; /* 紫を深めに（落ち着いた印象） */
+  --bg-to:   #0a1e96; /* 0C27F4 を抑えたネイビーブルー */
+}
+html, body, #root { height: 100%; }
+
+body {
+  background: linear-gradient(135deg, var(--bg-from), var(--bg-via), var(--bg-to));
+  background-attachment: fixed;
+}
+
+/* ガラス汎用ユーティリティ（必要なら className=\"glass\" で使用） */
+.glass {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  border-radius: 1rem;
+}
