@@ -1,5 +1,5 @@
 import './index.css'
-import heroBg from './assets/mysite_header.png' // 保存した画像を読み込む
+import heroBg from './assets/image/mysite_header.png' // 保存した画像を読み込む
 
 function HeaderImage() {
   return (
