@@ -1,11 +1,13 @@
 import HeaderImage from '../components/header_image'
-import BridgeCard from '../components/bridge_card'
+import ScrollBg from '../components/scroll_background'
+import Contact from '../components/contact'
 
 const Home = () => {
   return (
     <div className="text-white">
+      <ScrollBg /> 
       <HeaderImage />
-      <BridgeCard />
+      {/* <BridgeCard /> */}
       <section className="py-16 text-center">
         <div className="glass max-w-3xl mx-auto -mt-8 px-4 py-3 text-center bg-white/10">
           Designer / Developer — Tokyo, JP
@@ -17,6 +19,7 @@ const Home = () => {
           View My Work
         </a>
       </section>
+        <Contact />
     </div>
   )
 }
