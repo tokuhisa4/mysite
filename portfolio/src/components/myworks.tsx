@@ -39,16 +39,16 @@ const WORKS: Work[] = [
       "実運用で使う粒度に合わせてスキーマとビューを再定義。役割別にビューを分割し、探索導線を最短化。運用マニュアルも作成。",
   },
   {
-    id: "portfolio-refresh",
-    title: "コーポレートサイトUI刷新",
+    id: "django-backend",
+    title: "マッチングサービスのバックエンド構築",
     summary:
-      "情報設計とビジュアル刷新。軽量化＋計測で改善サイクルが回る構成に更新。",
-    result: "平均滞在 +35% / PV/Session +22%",
-    stack: ["React", "TypeScript", "Tailwind", "GTM"],
+      "Python/Djangoで会員管理・マッチングロジックのバックエンドを開発。",
+    result: "バックエンド開発",
+    stack: ["Python", "Django", "SQLite", "Docker", "HTML/CSS",],
     category: "Web",
-    cover: "/assets/works/web-refresh.jpg",
+    cover: "../src/assets/image/matching_backend.png",
     details:
-      "主要導線の再設計、Hero再構成、モバイルの視認性改善。Core Web Vitalsを監視し、段階的にパフォーマンス改善。",
+      "Python/Djangoで会員登録・プロフィール管理・マッチングロジックを実装。UI/UX改善も担当し、フロントエンドと連携しマッチングサービスのWebアプリケーションを作成。APIを設計し、フロント側に会員データやマッチング情報を提供。",
   },
 ];
 
@@ -141,14 +141,6 @@ function WorkModal({ work, onClose }: { work: Work; onClose: () => void }) {
           </div>
         </div>
 
-        <div className="mt-6 flex justify-end">
-          <a
-            href="#contact"
-            className="px-4 py-2 rounded-full border border-white/30 bg-white/10 hover:bg-white/20"
-          >
-            この実績について相談する
-          </a>
-        </div>
       </div>
     </div>
   );
@@ -186,8 +178,7 @@ export default function MyWorks() {
       </div>
 
       <p className="opacity-80 mb-8">
-        データ分析・計測設計・ダッシュボード・Web UI の実績から、代表事例を掲載しています。
-        各カードをクリックすると詳細が開きます。
+        編集中です。実績は今後も追加予定です。
       </p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

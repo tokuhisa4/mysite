@@ -5,9 +5,31 @@
 
 /* 暖色グラデのベース（背景） */
 :root {
-    --bg-from: #3a2b2f; /* ブラウンワイン */
-  --bg-via:  #332b44; /* 紫がかった中間色 */
-  --bg-to:   #1b1f30; /* ネイビー寄りの締め色 */
+  --bg-from: #0c27f4;
+  --bg-via:  #2e2a44;
+  --bg-to:   #1b1f30;
+  --scroll-tint: 0;
+}
+
+#root::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: linear-gradient(135deg, var(--bg-from), var(--bg-via), var(--bg-to));
+}
+
+#root::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,var(--scroll-tint)) 0%,
+    rgba(0,0,0,0) 50%
+  );
+  pointer-events: none;
 }
 html, body, #root { height: 100%; }
 
