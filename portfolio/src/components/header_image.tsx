@@ -28,9 +28,9 @@ function HeaderImage() {
           </a>
           {/* 右側：メニュー */}
           <div className="flex items-center space-x-4">
-            <a href="#about" className="hover:text-gray-200 transition">About</a>
-            <span className="opacity-50">｜</span>
             <a href="#works" className="hover:text-gray-200 transition">My Works</a>
+            <span className="opacity-50">｜</span>
+            <a href="#about" className="hover:text-gray-200 transition">About</a>
             <span className="opacity-50">｜</span>
             <a href="#contact" className="hover:text-gray-200 transition">Contact</a>
           </div>
