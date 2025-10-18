@@ -27,16 +27,16 @@ const WORKS: Work[] = [
       "全ファネルイベントを再定義し、セッション単位での行動系列を可視化。重要KPIの警告しきい値を設定し週次で監視。UI改修後のABテストで改善を検証。",
   },
   {
-    id: "looker-redesign",
-    title: "売上ダッシュボード再設計",
+    id: "slack-notification",
+    title: "Slackの自動通知システムの構築",
     summary:
-      "BigQuery集計を整理し、Looker Studioの情報設計を刷新。誰でも使える運用へ。",
-    result: "更新時間 -70% / 週次準備 -50%",
-    stack: ["BigQuery", "Looker Studio", "SQL"],
-    category: "Dashboard",
-    cover: "/assets/works/dashboard.jpg",
+      "スクレイピング結果を定期的にSlackに通知するシステムを構築",
+    result: "自動通知システム構築",
+    stack: ["Python", "GAS", "Github Actions", "Slack API"],
+    category: "Web",
+    cover: "../src/assets/image/slack_notification.png",
     details:
-      "実運用で使う粒度に合わせてスキーマとビューを再定義。役割別にビューを分割し、探索導線を最短化。運用マニュアルも作成。",
+      "Slack APIとGASを用いて、スクレイピングしたデータを定期的にSlackチャンネルに通知するシステムを構築。Github Actionsで自動化し、手動での確認作業を削減。",
   },
   {
     id: "django-backend",
